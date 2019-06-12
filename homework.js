@@ -13,7 +13,7 @@ name = 'Василий';
 admin = name;
 alert(admin);
 
-//3 задание
+/*3 задание*/
 var realnumber = 1000;
 var textnumber = "108";
 var totalnumber = realnumber + textnumber;
