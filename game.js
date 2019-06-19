@@ -284,20 +284,24 @@ function FightRound(Duelist1, Duelist2){
 				Duelist1.health.current -= Duelist2.attack;
 				Duelist2.health.current -= Duelist1.magic_power;
 				Duelist1.mana.current -=5;
+				Duelist2.stamina.current -= 3;
 			} else if (hero_cast_magic == 1 && enemy_action == 'defense'){
 				alert('Противник укрылся за щитом, это была ошибка, вы нанесли' + Duelist1.magic_power + ' огненым шаром');
 				Duelist2.health.current -= Duelist1.magic_power;
 				Duelist1.mana.current -=5;
+				Duelist2.stamina.current -= 1;
 			} else if (hero_cast_magic == 2 && enemy_action == 'attack'){
 				alert('Вы вылечились на ' + Duelist1.magic_power + ' но противник достал вас ножичком на ' + Duelist2.attack);
 				Duelist1.health.current += Duelist1.magic_power;
 				Duelist1.health.current -= Duelist2.attack;
 				Duelist1.mana.current -=5;
+				Duelist2.stamina.current -= 3;
 			} else if (hero_cast_magic == 2 && enemy_action == 'defense'){
 				alert('Противник защитился, пока вы вылечили себе ' + Duelist1.magic_power);
 				Duelist1.health.current += Duelist1.magic_power;
 				Duelist2.stamina.current -= 1;
 				Duelist1.mana.current -=5;
+				Duelist2.stamina.current -= 1;
 			}
 		}else if (hero_action == 1 && enemy_action == 'attack'){ //если герои и противник оба атаковали
 			alert('Вы скрестили мечи');
