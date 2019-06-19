@@ -1,7 +1,21 @@
 console.log('Задача №1');
+function isPrime(number){
+	if(number == 1){
+		return true;
+	}
+	for(var i = 0; i < number; i++){
+		if(number % i ==0 && i != 1 && i != number){
+			return false;
+		}
+	}
+	return true;
+}
+
 var i = 0;
 while (i <= 100){
-	console.log(i);
+	if (isPrime(i)){
+		console.log('Найдено простое число: ' + i);
+	}
 	++i;
 } 
 
