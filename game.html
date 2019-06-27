@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPG Game</title>
+	<link href="style.css" rel="stylesheet"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class = 'duel'>
+
+    <div id = 'hero'>
+		<div id = 'hero_img'>
+			<img id = 'warrior' class = 'avatar hide' src = 'images/hero.jpg'>
+			<img id = 'mage' class = 'avatar hide' src = 'images/mage.jpg'>
+			<img id = 'tank' class = 'avatar hide' src = 'images/tank.jpg'>
+		</div>
+		<p id = 'hero_stats'>
+		</p>
+	</div>
+	
+	<div id = 'enemy hide'>
+		<div id = 'enemy_img'>
+			<img id = 'enemy_bandit' class = 'avatar hide' src = 'images/bandit.jpg'>
+			<img id = 'enemy_warlock' class = 'avatar hide' src = 'images/warlock.jpg'>
+			<img id = 'enemy_sumo' class = 'avatar hide' src = 'images/sumo.jpg'>
+		</div>
+		<p id = 'enemy_stats'>
+		</p>
+	</div>
+	
+</div>
+
+<script src = "game.js"></script>
+</body>
+</html>

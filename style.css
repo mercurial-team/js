@@ -1,0 +1,22 @@
+.duel{
+	display: flex;
+    justify-content: space-around;
+}
+.avatar{
+	height: 300px;
+}
+.battle_div{
+	display:flex;
+	width: 200px;
+    background-color: grey;
+}
+#enemy{
+	display: flex;
+}
+#hero_stats, #enemy_stats{
+	display: flex;
+    justify-content: center;
+}
+.hide{
+	display:none;
+}
