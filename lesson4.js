@@ -41,7 +41,7 @@ var cart = [
 	}
 ];
 
-function TotalPrice(){
+function totalPrice(){
 	return this.price * this.count; //Итог = цена * количество
 }
 
