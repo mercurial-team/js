@@ -1,6 +1,6 @@
 console.log('Задание №1');
 
-function SplitNumberIntoObject(number){
+function splitNumberIntoObject(number){
 
 	var result = {};
 	if (number > 999 || number < 0){
